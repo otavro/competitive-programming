@@ -13,6 +13,5 @@ int main() {
     std::cout << std::fixed << std::setprecision(3); 
     std::cout << averageConsumption << " km/l" << std::endl;
     
-
     return 0;
 }
