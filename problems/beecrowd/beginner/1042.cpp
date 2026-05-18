@@ -1,31 +1,53 @@
 #include <iostream>
 #include <iterator>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
-// If ord = 0 Asc || ord = 1 Desc
-void bubbleSort(int list[3], int ord){
-    int length = 3;
-    for(int i = 0; i < length; i++){
-        for(int j = 0; length - i - 1; j++){
+
+void bubbleSort(vector<int> &list){
+    int length = list.size();
+    bool swapped;
+
+    for(int i = 0; i < length; i++){  
+        swapped = false;
+        for(int j = 0;  j < length - i - 1; j++){
             if(list[j] > list[j+1]){
                 swap(list[j], list[j+1]);
-            }
+                swapped = true;
+            } 
+        }
+        if(!swapped){
+            break;
         }
     }
 
 }
 
+
 int main() {
 
     
-    int list[3];
+    vector<int> list;
+    vector<int> orig;
+    int n;
 
-    cin >> list[0] >> list[1] >> list[2];
+    for(int i = 0; i <3; i++){
+        cin >> n;
+        list.push_back(n);
+        orig.push_back(n);
+    }
+    
 
-    bubbleSort(list, 0);
+    bubbleSort(list);
 
     for(int i =0; i < 3; i++){
         cout << list[i] << "\n";
+    }
+    cout << "\n";
+
+    for(int i =0; i < 3; i++){
+        cout << orig[i] << "\n";
     }
     
 
