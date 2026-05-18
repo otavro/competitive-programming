@@ -1,5 +1,7 @@
 
 #include <iostream>
+#include<stdio.h>
+
 
 using namespace std;
 
@@ -7,13 +9,13 @@ int main() {
 
    
 
-    cout << "---------------------------------------\n";
-    cout << "|x = 35                               |\n";
-    cout << "|                                     |\n";
-    cout << "|                x = 35               |\n";
-    cout << "|                                     |\n";
-    cout << "|                               x = 35|\n";
-    cout << "---------------------------------------\n";
+    printf("---------------------------------------\n");
+	printf("|x = 35                               |\n");
+	printf("|                                     |\n");
+	printf("|               x = 35                |\n");
+	printf("|                                     |\n");
+	printf("|                               x = 35|\n");
+	printf("---------------------------------------\n");
 
 
     return 0;
