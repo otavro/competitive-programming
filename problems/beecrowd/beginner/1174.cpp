@@ -7,13 +7,15 @@ using namespace std;
 
 int main() {
 
-    int v;
+    double a;
 
-    cin >> v;
+    cout << fixed << setprecision(1);
 
-    for(int i = 0; i < 10; i++){
-        cout << "N[" << i << "] = " << v << "\n";
-        v *=2;
+    for(int i = 0; i < 100; i++){
+        cin >> a;
+        if(a <= 10){
+            cout << "A[" << i << "] = " << a << "\n";
+        }
     }
 
     return 0;
