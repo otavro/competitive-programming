@@ -10,7 +10,6 @@ int main() {
     while (true)
     {
         cin >> n;
-
         if(n == 1) alchool++;
         if(n == 2) gasoline++;
         if(n == 3) diesel++;
