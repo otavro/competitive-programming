@@ -1,1 +1,1 @@
-select round(avg(price), 2) from products
+select round(avg(price), 2) from products 
