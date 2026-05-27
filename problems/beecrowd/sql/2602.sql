@@ -1,1 +1,3 @@
-select customers.name from customers where customers.state = 'RS'
+select customers.name 
+from customers 
+where customers.state = 'RS'
