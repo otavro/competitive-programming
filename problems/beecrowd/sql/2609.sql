@@ -1,4 +1,3 @@
-select categories.name, sum(products.amount)
-from categories
+select categories.name, sum(products.amount) from categories
 inner join products on products.id_categories = categories.id
 group by categories.name
