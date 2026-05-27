@@ -1,1 +1,1 @@
-select max(price), min(price) from products
+select max(price), min(price) from products 
